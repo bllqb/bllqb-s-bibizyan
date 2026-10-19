@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Бибизяны (Самые популярные)</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+<style>
+    html {
+        height: 100%;
+        margin: 0; 
+    }
+    body {
+        height: 100%; 
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, sans-serif;
+        background-color: #ede5dd; 
+        color: #827367;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    header {
+        box-sizing: border-box;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px; 
+        background-color: #d6c4b2;
+        padding: 15px; 
+        border-bottom: 1px solid #35322e;   
+    }
+    nav {
+        box-sizing: border-box;
+        background-color: #8A786E;
+        margin: 5px auto;
+        padding: 5px 10px;
+        border-radius: 50px;
+        width: 100%; 
+        max-width: 600px;
+        border: 1px solid #35322e;
+
+    }
+    nav ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        gap:  40px; 
+        padding: 10px 50px; 
+        margin: 5px;           
+
+    }
+    nav a {
+        color: #63574F;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 21px;
+        transition: color 0.4s ease;
+    }
+    nav a:hover {
+        color: #d6c4b2; 
+    }
+    nav a.active {
+        color: #d6c4b2;
+        text-decoration: underline;
+    }
+    main {
+        box-sizing: border-box;
+        width: 100%;
+        max-width: 1000px;
+        margin: 20px auto;
+        padding: 0 20px;
+        border: 2px solid #827367;
+        border-radius: 27px;
+        flex: 1 0 auto;
+   }
+   h2 {
+        text-align: center;
+        color: #827367;
+        letter-spacing: 2px;
+        text-decoration: underline;
+        font-size: 24px;
+   }
+   p {
+        margin: 13px 25px;
+        color: #73665B;
+        font-weight: 500;
+        font-size: 17px;
+   }
+   footer {
+        box-sizing: border-box;
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+        background: #d6c4b2;
+        border-top: 1px solid #35322e;
+        color: #777;
+        font-size: 15px;
+        margin-top: 10px;
+        flex-shrink: 0;
+   }
+   .video-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        margin: 25px 20px;
+   }
+   .video-card {
+        width: 290px; 
+        background-color: #e5dbd3;
+        border-radius: 15px;
+        overflow: hidden;
+        border: 1px solid #827367;
+        box-shadow: 0 4px 10px;
+   }
+   .video-card video {
+        display: block;
+        width: 100%;
+        height: 500px; 
+        object-fit: cover; 
+        border-radius: 15px;
+   }
+   .video-caption {
+        text-align: center;
+        color: #73665B;
+        padding: 10px 15px;
+        margin: 0;
+        font-size: 15px;
+        font-weight: 600;
+   }
+</style>
+
+</head>
+<body>
+
+<header>
+    <h1> Здесь самые популярные бибизяны российского тик тока!  </h1>
+</header>
+
+<nav>
+<ul>
+    <li><a href="index.html">Обо мне</a></li>
+    <li><a href="page02.html">О бибизянах</a></li>
+    <li><a href="page03.html" class="active">Самые известные</a></li>
+</ul>
+</nav>
+
+<main>
+<h2>Самые известные в русскоязычном тик токе бибизяны</h2>
+    <div class="video-grid">
+        <!-- Видео 1 -->
+        <div class="video-card">
+            <video src=anfisa.mp4 controls></video>
+            <p class="video-caption">Анфиса</p>
+        </div>
+        <div class="video-card">
+            <video src=chita.mp4 controls></video>
+            <p class="video-caption">Чита</p>
+        </div>
+        <div class="video-card">
+            <video src=lola.mp4 controls></video>
+            <p class="video-caption">Лола</p>
+        </div>
+        <div class="video-card">
+            <video src=malisa.mp4 controls></video>
+            <p class="video-caption">Малиса</p>
+        </div>
+        <div class="video-card">
+            <video src=nikolaich.mp4 controls></video>
+            <p class="video-caption">Яша Лазаревский (Николаич)</p>
+        </div>
+    </div>
+</main>
+
+<footer>
+<p>tg: @illbllqb</p>
+<p>© 2026 Злата. Все права защищены.</p>
+</footer>
+
+</body>
+</html>
